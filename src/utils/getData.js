@@ -8,6 +8,6 @@ export const getData = async (id) => {
     const json = await data.json();
     return json;
   } catch {
-    console.log(error);
+    return 0;
   }
 }

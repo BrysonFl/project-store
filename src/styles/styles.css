@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  color: #3c484e;
+  font-family: 'Open Sans', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.Container-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+  width: 100%;
+  margin-bottom: 30px;
+  background-color: #DDD4D6;
+}
+
+.Container-header a {
+  margin-left: 50px;
+  text-transform: uppercase;
+}
+
+.Container-header__img {
+  height: 50px;
+  width: 50px;
+  margin-right: 50px;
+  position: relative;
+}
+
+.Container-header__img img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.Car-count {
+  display: none;
+  position: absolute;
+  background-color: black;
+  height: 15px;
+  width: 15px;
+  top: 25px;
+  right: 0;
+  border-radius: 50%;
+}
+
+.Container-found {
+  height: 400px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  align-content: center;
+  row-gap: 50px;
+}
+
+.Item-card {
+  height: 400px;
+  width: 350px;
+  box-shadow: 8px 14px 38px rgba(39, 44, 49, .06), 1px 3px 8px rgba(39, 44, 49, .03);
+  border-radius: 5px;
+}
+
+.Container-img {
+  height: 250px;
+  width: 100%;
+}
+
+.Container-img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.Container-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 25%;
+  padding-left: 10px;
+  background-color: #E5ECEA;
+}
+
+.Container-description p {
+  margin: 0%;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.Container-button {
+  height: 51px;
+  width: 100%;
+}
+
+.Add-car {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background-color: #33FFC1;
+  outline: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.Add-car img {
+  height: 30px;
+  width: 30px;
+}
+
+.Container {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  height: 50px;
+  width: 100px;
+  outline: none;
+  box-shadow: 3px 3px rgba(0, 0, 0, .2);
+  border: none;
+  transition: .3s all ease-in-out;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  color: black;
+  font-weight: bold;
+}
+
+.btn:active {
+  transform: scale(.8);
+}
+
+.Add {
+  background-color: #D3D3D3;
+}
+
+.Back {
+  background-color: #A7F9B7;
+  margin-right: 30px;
+}
+
+.Create-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+}
+
+.Create-form div {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.Send {
+  background-color: #08FB38;
+}
+
+.Delete {
+  background-color: #FB0843;
+  margin-left: 30px;
+}
+
+.Edit {
+  background-color: #DECED2;
+}
+
+.Item {
+  height: 400px;
+  margin: 0%;
+  display: flex;
+}
+
+.Container-img__item {
+  width: 30%;
+  height: 100%;
+}
+
+.Container-img__item img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.Container-item__description {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: 50px;
+}
+
+.Input {
+  height: 30px;
+  width: 500px;
+}
