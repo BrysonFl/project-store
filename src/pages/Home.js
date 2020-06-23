@@ -9,8 +9,8 @@ export const Home = async () => {
   } else {
     const view = `
       <div class="Items">
-        ${items.map(item =>
-          `
+        ${items.map(item => {
+          return `
             <article class="Item-card">
               <a href="#/${item.id}">
                 <div class="Container-img">
@@ -24,13 +24,13 @@ export const Home = async () => {
                 </div>
               </a>
               <div class="Container-button">
-                <button id="add" class="Add-car">
+                <button class="Add-car" data-id-item=${item.id}>
                   <img src="../../public/assets/carrito-de-compras.png" />
                 </button>
               </div>
             </article>
           `
-        ).join('')}
+        }).join('')}
       </div>
     `;
     return view;

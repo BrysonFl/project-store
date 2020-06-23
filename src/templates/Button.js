@@ -12,6 +12,13 @@ export const Button = (route) => {
         <a class="btn Add" href="#/create">Add Item</a>
       </div>
     `;
+  } else if(route === '/shoping-car'){
+    return `
+      <div class="Container">
+        <a class="btn Back" href="/">Back</a>
+        <a class="btn Shop" href="#">Shop</a>
+      </div>
+    `;
   } else {
     return `
       <div class="Container">
